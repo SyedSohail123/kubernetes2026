@@ -18,21 +18,21 @@ spec:
                 name: identity-svc
                 port:
                   number: 80
-          - pathType: Prefix
+          - pathType: ImplementationSpecific
             path: /order(/|$)(.*)
             backend:
               service: 
                 name: order-svc
                 port:
                   number: 80
-          - pathType: Prefix
+          - pathType: ImplementationSpecific
             path: /catalog(/|$)(.*)
             backend:
               service: 
                 name: catalog-svc
                 port:
                   number: 80
-          - pathType: Prefix
+          - pathType: ImplementationSpecific
             path: /basket(/|$)(.*)
             backend:
               service: 
