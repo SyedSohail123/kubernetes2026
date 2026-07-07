@@ -12,28 +12,28 @@ spec:
     - http:
         paths:
           - pathType: Prefix
-            path: /identity(/|$)(.*)
+            path: /identity
             backend:
               service: 
                 name: identity-svc
                 port:
                   number: 80
           - pathType: Prefix
-            path: /order(/|$)(.*)
+            path: /order
             backend:
               service: 
                 name: order-svc
                 port:
                   number: 80
           - pathType: Prefix
-            path: /catalog(/|$)(.*)
+            path: /catalog
             backend:
               service: 
                 name: catalog-svc
                 port:
                   number: 80
           - pathType: Prefix
-            path: /basket(/|$)(.*)
+            path: /basket
             backend:
               service: 
                 name: basket-svc
